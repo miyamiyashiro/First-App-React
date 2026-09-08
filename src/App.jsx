@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import ReactLogo from './assets/react-logo.png'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div>
+      <header>
+        <img src={ReactLogo} alt="React logo" />
+        <div>
+          <h1>React.js</h1>
+          <p>i.e., using the React library for rendering the UI</p>
+        </div>
+      </header>
 
-export default App
+      <div id="tabs">
+        <menu>
+          <button>Why React?</button>
+          <button>Core Features</button>
+          <button>Related Resources</button>
+        </menu>
+
+        <div id="tab-content">
+          <ul>
+            <li>React is extremely popular</li>
+            <li>It makes building complex, interactive UIs a breeze</li>
+            <li>It's powerful & flexible</li>
+            <li>It has a very active and versatile ecosystem</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
