@@ -45,9 +45,21 @@ export default function App() {
 
       <div id="tabs">
         <menu>
-          <button>Why React?</button>
-          <button>Core Features</button>
-          <button>Related Resources</button>
+        <button onClick={() => setActiveContentIndex(0)}>
+          Why React?
+        </button>
+
+        <button onClick={() => setActiveContentIndex(1)}>
+          Core Features
+        </button>
+
+        <button onClick={() => setActiveContentIndex(2)}>
+          Related Resources
+        </button>
+
+        <button onClick={() => setActiveContentIndex(3)}>
+          React vs. Vanilla
+        </button>
         </menu>
 
         <div id="tab-content">
