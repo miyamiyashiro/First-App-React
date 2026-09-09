@@ -1,4 +1,5 @@
 import ReactLogo from './assets/react-logo.png'
+import './styles.css'
 
 export default function App() {
   return (
