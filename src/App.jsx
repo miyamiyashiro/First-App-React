@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ReactLogo from './assets/react-logo.png'
 import './styles.css'
 
@@ -29,6 +30,9 @@ const content = [
 ];
 
 export default function App() {
+  //CRIAR ESTADOS
+  // const [estado, função que altera o estado da aplicação] = useState(valor inicial)
+  const [activeContentIndex, setActiveContentIndex] = useState(0);
   return (
     <div>
       <header>
@@ -48,7 +52,7 @@ export default function App() {
 
         <div id="tab-content">
           <ul>
-            {content[0].map((item)=>(
+            {content[activeContentIndex].map((item)=>(
                <li key={item}>{item}</li>
             ))}
           </ul>
