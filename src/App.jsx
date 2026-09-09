@@ -48,10 +48,9 @@ export default function App() {
 
         <div id="tab-content">
           <ul>
-            <li>React is extremely popular</li>
-            <li>It makes building complex, interactive UIs a breeze</li>
-            <li>It's powerful & flexible</li>
-            <li>It has a very active and versatile ecosystem</li>
+            {content[0].map((item)=>(
+               <li key={item}>{item}</li>
+            ))}
           </ul>
         </div>
       </div>
